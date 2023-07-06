@@ -1,0 +1,18 @@
+// 1. Conversion of inches to feet
+var inches = 42;
+var feet = inches / 12;
+console.log(inches + " inches = " + feet + " feet");
+
+// 2. Conversion of feet to meters
+var lengthFeet = 60;
+var widthFeet = 40;
+var lengthMeters = lengthFeet * 0.3048;
+var widthMeters = widthFeet * 0.3048;
+console.log("Rectangular plot dimensions: " + lengthFeet + " feet x " + widthFeet + " feet");
+console.log("Rectangular plot dimensions: " + lengthMeters + " meters x " + widthMeters + " meters");
+
+// 3. Calculation of area in acres
+var plotCount = 25;
+var plotAreaFeet = lengthFeet * widthFeet;
+var plotAreaAcres = plotAreaFeet * plotCount / 43560;
+console.log("Area of 25 plots: " + plotAreaAcres + " acres");
